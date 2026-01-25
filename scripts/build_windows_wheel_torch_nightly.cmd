@@ -5,9 +5,11 @@ setlocal enabledelayedexpansion
 set PYTHON_VERSION=%1
 set TORCH_VERSION=%2
 set CUDA_VERSION=%3
+set MAX_JOBS=%4
 
 set CUDA_SHORT_VERSION=%CUDA_VERSION:.=%
-echo %CUDA_SHORT_VERSION%
+echo CUDA_SHORT_VERSION: %CUDA_SHORT_VERSION%
+echo MAX_JOBS: %MAX_JOBS%
 
 :: conda environment name
 set ENV_NAME=build_env_%PYTHON_VERSION%_%TORCH_VERSION%

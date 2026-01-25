@@ -5,9 +5,11 @@ setlocal enabledelayedexpansion
 set PYTHON_VERSION=%1
 set TORCH_VERSION=%2
 set CUDA_VERSION=%3
+set MAX_JOBS=%4
 
 set CUDA_SHORT_VERSION=%CUDA_VERSION:.=%
-echo %CUDA_SHORT_VERSION%
+echo CUDA_SHORT_VERSION: %CUDA_SHORT_VERSION%
+echo MAX_JOBS: %MAX_JOBS%
 
 :: setup some variables
 if "%TORCH_VERSION%"=="2.8" (
