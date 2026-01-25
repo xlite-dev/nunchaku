@@ -75,6 +75,7 @@ optional-dependencies.dev = [
 ]
 optional-dependencies.docs = [
   "breathe",
+  "docutils<0.21",
   "furo",
   "graphviz",
   "ipykernel",
